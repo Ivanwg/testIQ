@@ -17,7 +17,7 @@ export function createMain() {
   const landingSection = landingObj.section;
   const detailBtn = landingObj.btn;
   main.append(landingSection);
-
+  let dragged = 0;
   const tl = gsap.timeline({paused: true});
   tl.to(detailBtn, {transform: 'translateY(-100%)', opacity: 0, duration: .3, delay: 0, ease: "power2.out"})
   //   quotationSection.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
@@ -29,11 +29,10 @@ export function createMain() {
   //   setTimeout(() => router.navigate('about?scroll=true'), 300);
 
   // });
-  detailBtn.addEventListener('scroll', e => { 
-    console.log('scroll')
-    // detailBtn.setAttribute('style', 'display: none;')
-    const scrolled = document.scrollingElement.scrollTop;
-    const position = detailBtn.offsetTop;
+  detailBtn.addEventListener('drag', e => { 
+    dragged += 1;
+
+    dragged === 1 && detailBtn.setAttribute('style', 'display: none;')
 
     if(scrolled > position + 20){
         setTimeout(() => router.navigate('about?scroll=true'), 300);
