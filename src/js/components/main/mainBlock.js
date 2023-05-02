@@ -29,9 +29,9 @@ export function createMain() {
   //   setTimeout(() => router.navigate('about?scroll=true'), 300);
 
   // });
-  document.addEventListener('scroll', e => {
+  detailBtn.addEventListener('scroll', e => { 
     console.log('scroll')
-    detailBtn.setAttribute('style', 'display: none;')
+    // detailBtn.setAttribute('style', 'display: none;')
     const scrolled = document.scrollingElement.scrollTop;
     const position = detailBtn.offsetTop;
 
