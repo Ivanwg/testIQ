@@ -19,7 +19,7 @@ export function createLandingSection() {
   const spanWhite = createELement({elemName: 'span', attrs: {classNames: [`${mainNodeClassName}__bottom-text_white`],
     text: 'и улучшению финансового благосостояния и личной жизни'
   }});
-  const btnDetailed = createELement({elemName: 'button', attrs: {classNames: ['btn', 'animated-btn', `${mainNodeClassName}__detailed`], draggable: true}});
+  const btnDetailed = createELement({elemName: 'button', attrs: {classNames: ['btn', 'animated-btn', `${mainNodeClassName}__detailed`]}});
   const detailedIcon = createELement({elemName: 'span', attrs: {classNames: [`${mainNodeClassName}__detailed-icon`]}});
   const detailedText = createELement({elemName: 'span', attrs: {classNames: [], text: 'Подробнее'}});
 

@@ -23,19 +23,17 @@ export function createMain() {
   //   quotationSection.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
 
 
-  // detailBtn.addEventListener('click', e => {
-  //   e.preventDefault();
-  //   tl.play()
-  //   setTimeout(() => router.navigate('about?scroll=true'), 300);
+  detailBtn.addEventListener('click', e => {
+    e.preventDefault();
+    tl.play();
+    setTimeout(() => router.navigate('about?scroll=true'), 300);
 
-  // });
-  detailBtn.addEventListener('drag', e => { 
-    dragged += 1;
+  });
+  detailBtn.addEventListener('touchstart', e => { 
 
-    dragged === 1 && detailBtn.setAttribute('style', 'display: none;')
-
-    if(scrolled > position + 20){
-        setTimeout(() => router.navigate('about?scroll=true'), 300);
+    if(dragged === 1){
+        tl.play();
+        setTimeout(() => router.navigate('about?scroll=true'), 500);
     }
 
   })
