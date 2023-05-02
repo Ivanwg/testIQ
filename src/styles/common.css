@@ -19,14 +19,16 @@
   border: none;
   outline: 0;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 
 body {
-  position: relative;
   height: 100vh;
   min-width: 320px;
   color: var(--main-text-color);
+  overflow-x: hidden;
+
 }
 
 h1, h2, h3, h4, h6, p, div, img, ul, li, section, a {
@@ -36,8 +38,10 @@ h1, h2, h3, h4, h6, p, div, img, ul, li, section, a {
 
 .root {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-rows: auto 1fr;
   height: 100vh;
   max-width: 800px;
   margin: 0 auto;
@@ -49,7 +53,9 @@ header {
 }
 
 main {
-  flex-grow: 10;
+  /* flex-grow: 10; */
+  height: 100vh;
+  /* height: calc(100vh - 84px); */
 }
 
 ul {
@@ -196,11 +202,11 @@ ul {
 }
 
 .stretched {
-  position: relative;
+  /* position: relative;
   top: 0;
   bottom: 0;
   height: 100vh;
   background-image: url('../img/kosmo.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
