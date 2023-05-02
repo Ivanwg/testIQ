@@ -29,7 +29,7 @@ export function createMain() {
     setTimeout(() => router.navigate('about?scroll=true'), 300);
 
   });
-  detailBtn.addEventListener('touchstart', e => { 
+  detailBtn.addEventListener('touchmove', e => { 
 
     if(dragged === 1){
         tl.play();
