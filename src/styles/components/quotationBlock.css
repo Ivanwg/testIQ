@@ -2,7 +2,7 @@
 
 .quotation {
   position: relative;
-  background-image: url('img/blue.jpg');
+  background-image: url('../img/blue.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -51,7 +51,7 @@
   margin: 0 25px;
   height: 23px;
   width: 23px;
-  background-image: url('img/quote1.png');
+  background-image: url('../img/quote1.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -61,7 +61,7 @@
   margin: 0 25px;
   height: 23px;
   width: 23px;
-  background-image: url('img/quote2.png');
+  background-image: url('../img/quote2.png');
   background-repeat: no-repeat;
   background-size: contain;
 }

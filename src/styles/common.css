@@ -141,13 +141,13 @@ ul {
 }
 
 .kosmo-bgc {
-  background-image: url('img/kosmo.jpg');
+  background-image: url('../img/kosmo.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .lighting {
-  background-image: url('img/lighting.png');
+  background-image: url('../img/lighting.png');
 }
 
 .fixed {
@@ -199,7 +199,7 @@ ul {
   top: 0;
   bottom: 0;
   height: 120vh;
-  background-image: url('img/kosmo.jpg');
+  background-image: url('../img/kosmo.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }

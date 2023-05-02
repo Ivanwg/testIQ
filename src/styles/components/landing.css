@@ -33,7 +33,7 @@
   position: relative;
   width: 200px;
   height: 200px;
-  background-image: url('img/brainBig.png');
+  background-image: url('../img/brainBig.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

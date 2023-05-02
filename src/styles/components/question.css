@@ -154,7 +154,7 @@
 .btns-list {
   display: flex;
   align-items: stretch;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 8px;
 }
 
