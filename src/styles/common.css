@@ -199,5 +199,7 @@ ul {
   top: 0;
   bottom: 0;
   height: 120vh;
-
+  background-image: url('img/kosmo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
