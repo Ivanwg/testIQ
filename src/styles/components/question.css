@@ -146,6 +146,7 @@
 
 .question__img {
   justify-self: center;
+  height: 100%;
   min-height: 115px;
   max-height: 200px;
   object-fit: contain;

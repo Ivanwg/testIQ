@@ -54,7 +54,7 @@ header {
 
 main {
   /* flex-grow: 10; */
-  height: 100vh;
+  /* height: 100vh; */
   /* height: calc(100vh - 84px); */
 }
 
@@ -148,6 +148,7 @@ ul {
 }
 
 .kosmo-bgc {
+  overflow: hidden;
   background-image: url('../img/kosmo.jpg');
   background-repeat: no-repeat;
   background-size: cover;
