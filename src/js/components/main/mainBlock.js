@@ -23,14 +23,19 @@ export function createMain() {
   //   quotationSection.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
 
 
+  // detailBtn.addEventListener('click', e => {
+  //   e.preventDefault();
+  //   tl.play()
+  //   setTimeout(() => router.navigate('about?scroll=true'), 300);
+
+  // });
   document.addEventListener('scroll', e => {
-    // e.preventDefault();
     console.log('scroll')
+    detailBtn.setAttribute('style', 'display: none;')
     const scrolled = document.scrollingElement.scrollTop;
     const position = detailBtn.offsetTop;
 
     if(scrolled > position + 20){
-        tl.play()
         setTimeout(() => router.navigate('about?scroll=true'), 300);
     }
 
