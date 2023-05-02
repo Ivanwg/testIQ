@@ -1,0 +1,127 @@
+
+
+
+.landing {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  padding: 27px 0 11px;
+  min-height: calc(100vh - 84px);
+}
+
+.landing__container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-grow: 110;
+}
+
+.landing__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.landing__top, .landing__bottom, .landing__middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing__middle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-image: url('img/brainBig.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+}
+.landing__middle::before {
+  position: absolute;
+  content: '';
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  bottom: 25%;
+  border-radius: 100%;
+  box-shadow: 0px 0px 20000px var(--blue);
+}
+
+.landing__middle::after {
+  position: absolute;
+  content: '';
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  bottom: 25%;
+  border-radius: 100%;
+  box-shadow: 0px 0px 20000px var(--blue);
+}
+
+.landing__welcome {
+  margin-bottom: 16px;
+  font-family: 'PT Serif';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.landing__title {
+  max-width: 250px;
+  font-family: 'Yeseva One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--yellow);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.landing__bottom-text {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--yellow);
+}
+
+.landing__bottom-text_white {
+  color: var(--main-text-color);
+}
+
+.landing__detailed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+  font-family: 'PT Serif';
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 11px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.landing__detailed-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.45453 11.6364L8.45453 6.10454L10.9954 8.64545L11.6364 8L7.99999 4.36363L4.36362 8L5.00453 8.6409L7.54544 6.10454L7.54544 11.6364L8.45453 11.6364Z' fill='%230C0B10'/%3E%3C/svg%3E%0A");
+}

@@ -1,0 +1,41 @@
+
+.burger svg path {
+  fill: var(--gray);
+}
+
+.hiddenMenu {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* display: none; */
+  padding: 97px 18px 18px;
+  min-height: 100%;
+  background-color: var(--black);
+  opacity: 0;
+  transform: translateX(-110%);
+}
+
+.hiddenMenu__link {
+  padding: 13px 5px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--main-text-color);
+  text-transform: uppercase;
+}
+
+.hiddenMenu__close-btn {
+  position: absolute;
+  top: 18px;
+  right: 13px;
+  transform: translateY(-200%);
+}
+
+.hiddenMenu__close-btn svg path {
+  fill: var(--yellow);
+}

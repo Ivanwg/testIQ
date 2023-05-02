@@ -1,0 +1,49 @@
+.about {
+  padding: 38px 0 40px;
+  background-color: var(--main-text-color);
+}
+
+.about__container {
+  max-width: 400px;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__text {
+  align-self: flex-start;
+  font-family: PT Serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-align: left;
+
+  font-family: PT Serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-align: left;
+
+  font-family: Merriweather;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: var(--desc-black);
+}
+
+.about__scheme {
+  margin-top: 38px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.about__btn {
+  margin-top: 30px;
+}

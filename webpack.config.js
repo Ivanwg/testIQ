@@ -106,13 +106,6 @@ module.exports = {
               },
             },
           },
-          {
-            loader: 'sass-loader',
-            options: {
-              additionalData: "$env: " + process.env.NODE_ENV + ";",
-              sourceMap: isDev,
-            },
-          },
         ]
       },
       {

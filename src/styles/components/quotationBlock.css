@@ -1,0 +1,67 @@
+
+
+.quotation {
+  position: relative;
+  background-image: url('img/blue.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.quotation::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(84.34% 50.29% at 48.75% 49.71%, #2950C2 0%, rgba(38, 91, 199, 0.96) 40.62%, rgba(39, 98, 187, 0) 85.42%);
+}
+
+.quotation__container {
+  max-width: 400px;
+  padding-top: 43px;
+  padding-bottom: 32px;
+}
+
+.quotation__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.quotation__text {
+  display: block;
+  align-self: center;
+  max-width: 248px;
+  font-family: 'Yeseva One';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.quotation__text_first {
+  padding-top: 20px;
+}
+
+.quotation__quote1 {
+  margin: 0 25px;
+  height: 23px;
+  width: 23px;
+  background-image: url('img/quote1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.quotation__quote2 {
+  align-self: flex-end;
+  margin: 0 25px;
+  height: 23px;
+  width: 23px;
+  background-image: url('img/quote2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
