@@ -117,6 +117,7 @@
   letter-spacing: 0.05em;
   text-align: center;
   color: var(--main-text-color);
+  animation: spin 2s infinite linear;
 }
 
 .landing__detailed-icon {
@@ -124,4 +125,17 @@
   width: 16px;
   height: 16px;
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.45453 11.6364L8.45453 6.10454L10.9954 8.64545L11.6364 8L7.99999 4.36363L4.36362 8L5.00453 8.6409L7.54544 6.10454L7.54544 11.6364L8.45453 11.6364Z' fill='%230C0B10'/%3E%3C/svg%3E%0A");
+}
+
+
+@keyframes spin {
+  0% {
+    transform: translate3d(0, -20%, 0);
+  }
+  50% {
+    transform: translate3d(0, 20%, 0);
+  }
+  100% {
+    transform: translate3d(0, -20%, 0);
+  }
 }
