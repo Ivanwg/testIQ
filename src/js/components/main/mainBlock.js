@@ -20,7 +20,6 @@ export function createMain() {
   let dragged = 0;
   const tl = gsap.timeline({paused: true});
   tl.to(detailBtn, {transform: 'translateY(-100%)', opacity: 0, duration: .3, delay: 0, ease: "power2.out"})
-  //   quotationSection.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
 
 
   detailBtn.addEventListener('click', e => {
@@ -29,7 +28,7 @@ export function createMain() {
     setTimeout(() => router.navigate('about?scroll=true'), 300);
 
   });
-  detailBtn.addEventListener('touchmove', e => { 
+  detailBtn.addEventListener('touchmove', e => {
 
     if(dragged === 1){
         tl.play();
@@ -106,7 +105,8 @@ export function createResultPage() {
   callBtn.addEventListener('click', e => {
     e.preventDefault();
     fetch('https://swapi.dev/api/people/1').then(res => res.json()).then(obj => {
-      userData.innerHTML = `Имя: ${obj.name} <br> рост: ${obj.height} <br> цвет глаз:  ${obj.eye_color}`;
+      // userData.innerHTML = `Имя: ${obj.name} <br> рост: ${obj.height} <br> цвет глаз:  ${obj.eye_color}`;
+      userData.innerHTML = `Данные отправлены. Ожидайте звонка`;
     });
   });
 
